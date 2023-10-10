@@ -1,14 +1,16 @@
 import random
+
 import file_handler as fh
 from compression import compress_to, decompress_from
+from constants import *
 
 def generate(size, p, path):
     writer = fh.Writer(path)
     for i in range(size):
         if random.random() <= p:
-            writer.write("u")
+            writer.write(b'\x00')
         else:
-            writer.write("w")
+            writer.write(b'\x01')
     writer.end()
 
 def repeat(text, n, path):
@@ -31,13 +33,13 @@ def test(times, m_size, m_prob, read_path, path, write_path):
         other = fh.read(write_path)
 
         if original != other:
-            print("-----------------")
+            print(SEPARATOR)
             print(original)
-            print("-----------------")
+            print(SEPARATOR)
             print(other)
             good = False
     
-    print("-----------------")
+    print(SEPARATOR)
     if good:
         print("Everything is fine !!!")
     else:
