@@ -2,15 +2,15 @@ import random
 
 import file_handler as fh
 from compression import compress_to, decompress_from
-from constants import *
+from constants import SEPARATOR, U, W
 
 def generate(size, p, path):
     writer = fh.Writer(path)
     for i in range(size):
         if random.random() <= p:
-            writer.write(b'\x00')
+            writer.write(U)
         else:
-            writer.write(b'\x01')
+            writer.write(W)
     writer.end()
 
 def repeat(text, n, path):
