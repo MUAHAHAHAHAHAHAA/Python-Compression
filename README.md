@@ -18,8 +18,8 @@ Decompressing the file "compressed" with the result being written to "test_dec.t
 > \>> dcmp test/compressed test/test_dec.txt
 
 ## Resources
-Paper about arithmetic coding to compress data
+Paper about arithmetic coding to compress data </br>
 https://www.researchgate.net/publication/2799801_Practical_Implementations_of_Arithmetic_Coding
 
-Paper about data compression using dynamic markov modelling
+Paper about data compression using dynamic markov modelling  </br>
 https://plg.uwaterloo.ca/~gvcormac/manuscripts/dmc.pdf
