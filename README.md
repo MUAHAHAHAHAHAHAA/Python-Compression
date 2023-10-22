@@ -1,5 +1,5 @@
 
-# [Python-Compression](https://github.com/MUAHAHAHAHAHAHAA/Python-Compression "Python-Compression")
+# [Python Compression](https://github.com/MUAHAHAHAHAHAHAA/Python-Compression "Python-Compression")
 
 ## Content
 1. [Project](#project)
