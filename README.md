@@ -17,6 +17,9 @@ Compressing the file "test.txt" with the result being written to "compressed"
 Decompressing the file "compressed" with the result being written to "test_dec.txt"
 > \>> dcmp test/compressed test/test_dec.txt
 
+stopping the process
+> \>> end
+
 ## Resources
 Paper about arithmetic coding to compress data </br>
 https://www.researchgate.net/publication/2799801_Practical_Implementations_of_Arithmetic_Coding
