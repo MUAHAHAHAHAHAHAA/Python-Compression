@@ -39,7 +39,9 @@ def compress_to(read_path, path):
             seconds = round(ratio * (time.time()-t), 2)
             t = time.time()
             print("Leftover estimation: " + str(seconds) + " seconds")
-    
+
+    reader.end()
+
     seconds = round(time.time()-t, 2)
     print("Time needed: " + str(seconds) + " seconds")
 
